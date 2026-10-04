@@ -4,8 +4,8 @@ MediScan AI - Multi-Agent System
 """
 
 import streamlit as st
-from langchain_groq import ChatGroq
-from langchain.agents import Tool, AgentExecutor, create_react_agent
+from langchain_core.tools import Tool
+from langchain.agents import AgentExecutor, create_react_agent
 from langchain.prompts import PromptTemplate
 
 from database import (
