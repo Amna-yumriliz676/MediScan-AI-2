@@ -1,11 +1,11 @@
 """
 MediScan AI - Multi-Agent System
-4 coordinated agents powered by LangChain + Groq
+5 coordinated agents powered by LangChain + Groq
 """
 
 import streamlit as st
-from langchain_core.tools import Tool
-from langchain.agents import AgentExecutor, create_react_agent
+from langchain_groq import ChatGroq
+from langchain.agents import Tool, AgentExecutor, create_react_agent
 from langchain.prompts import PromptTemplate
 
 from database import (
